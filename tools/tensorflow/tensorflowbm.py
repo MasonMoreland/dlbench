@@ -41,7 +41,7 @@ if int(args.gpuCount) > 1:
 	cmd += ' gpu_count=' + args.gpuCount + ' ./tm.sh '
 else:
 	cmd += ' ./t.sh '
-cmd += ' >& ' + log_path
+cmd += ' &> ' + log_path
 
 ## Execute cmd 
 t = time.time()
